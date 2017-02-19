@@ -148,7 +148,7 @@ ammotable_t ammoTableMP[WP_NUM_WEAPONS] = {
 	//	MAX				USES	MAX		START	START  RELOAD	FIRE			NEXT	HEAT,	COOL,	MOD,	...
 	//	AMMO			AMT.	CLIP	AMMO	CLIP	TIME	DELAY			SHOT
 	{	0,				0,		0,		0,		0,		0,		50,				0,		0,		0,		0						},	// WP_NONE					// 0
-	{	4,				1,		1,		4,		1,		0,		50,				200,	0,		0,		MOD_KNIFE				},	// WP_KNIFE					// 1
+	{	8,				1,		1,		8,		1,		0,		50,				200,	0,		0,		MOD_KNIFE				},	// WP_KNIFE					// 1
 	{	24,				1,		8,		24,		8,		1500,	DELAY_PISTOL,	400,	0,		0,		MOD_LUGER				},	// WP_LUGER					// 2	// NOTE: also 32 round 'snail' magazine
 	{	90,				1,		30,		30,		30,		2400,	DELAY_LOW,		150,	0,		0,		MOD_MP40				},	// WP_MP40					// 3
 	{	45,				1,		15,		0,		4,		1000,	DELAY_THROW,	1600,	0,		0,		MOD_GRENADE_LAUNCHER	},	// WP_GRENADE_LAUNCHER		// 4
@@ -207,7 +207,7 @@ ammotable_t ammoTableMP[WP_NUM_WEAPONS] = {
 	{	1,				0,		10,		0,		1,		1000,	DELAY_THROW,	1600,	0,		0,		MOD_POISON_GAS			},	// WP_POISON_GAS			// 53
 	{	1,				0,		1,		0,		1,		100,	DELAY_LOW,		100,	0,		0,		MOD_LANDMINE			},	// WP_LANDMINE_BBETTY		// 54
 	{	1,				0,		1,		0,		1,		100,	DELAY_LOW,		100,	0,		0,		MOD_POISON_GAS			},	// WP_LANDMINE_PGAS			// 55
-	{	3,				1,		3,		0,		3,		0,  	DELAY_THROW,	0,	    0,		0,		MOD_MOLOTOV 			},	// WP_MOLOTOV   			// 56
+	{	8,				1,		8,		0,		8,		0,  	DELAY_THROW,	0,	    0,		0,		MOD_MOLOTOV 			},	// WP_MOLOTOV   			// 56
 };
 
 //----(SA)	moved in here so both games can get to it

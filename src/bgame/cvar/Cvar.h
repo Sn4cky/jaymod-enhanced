@@ -55,6 +55,9 @@ namespace objects {
     extern Cvar bg_glow;
     extern Cvar bg_misc;
     extern Cvar bg_panzerWar;
+	// snax - OmniEngi
+	extern Cvar bg_omniEngi;
+
     extern Cvar bg_poisonSyringes;
     extern Cvar bg_skills;
     extern Cvar bg_sniperWar;

@@ -558,7 +558,13 @@
     <ClInclude Include="cmd\Bots.h">
       <Filter>Header Files\game\cmd</Filter>
     </ClInclude>
-    <ClInclude Include="cmd\Setvar.h">
+    <ClInclude Include="cmd\HolyShit.h">
+      <Filter>Header Files\game\cmd</Filter>
+    </ClInclude>
+    <ClInclude Include="cmd\VarSet.h">
+      <Filter>Header Files\game\cmd</Filter>
+    </ClInclude>
+    <ClInclude Include="cmd\Sudo.h">
       <Filter>Header Files\game\cmd</Filter>
     </ClInclude>
   </ItemGroup>
@@ -1130,11 +1136,17 @@
     <ClCompile Include="cmd\Bots.cpp">
       <Filter>Source Files\game\cmd</Filter>
     </ClCompile>
-    <ClCompile Include="cmd\Setvar.cpp">
-      <Filter>Source Files\game\cmd</Filter>
-    </ClCompile>
     <ClCompile Include="g_fastpanzerkillingspree.cpp">
       <Filter>Source Files\game</Filter>
+    </ClCompile>
+    <ClCompile Include="cmd\HolyShit.cpp">
+      <Filter>Source Files\game\cmd</Filter>
+    </ClCompile>
+    <ClCompile Include="cmd\VarSet.cpp">
+      <Filter>Source Files\game\cmd</Filter>
+    </ClCompile>
+    <ClCompile Include="cmd\Sudo.cpp">
+      <Filter>Source Files\game\cmd</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

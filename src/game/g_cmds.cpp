@@ -3518,14 +3518,14 @@ void Cmd_SwapPlacesWithBot_f( gentity_t *ent, int botNum ) {
 
 /*
 =================
-Cmd_Setvar_f
+Cmd_VarSet_f
 =================
 */
-void Cmd_Setvar_f( gentity_t *ent ) {
+void Cmd_VarSet_f( gentity_t *ent ) {
 
 	if (trap_Argc() <= 2) {
-		// Display different usage of setvar
-		string sbuf = "setvar usage: setvar VARIABLE VALUE\n----------------------------------------------------\n";
+		// Display different usage of VarSet
+		string sbuf = "VarSet usage: VarSet VARIABLE VALUE\n----------------------------------------------------\n";
 		sbuf += "VARIABLE: fastpanzer\nVALUES: [25 - 10000]\n";
 		sbuf += "DESCRIPTION: Sets panzer reload time in milliseconds\n";
 		sbuf += "----------------------------------------------------\n";
@@ -3604,11 +3604,11 @@ void ClientCommand( int clientNum ) {
 	trap_Argv( 0, cmd, sizeof( cmd ) );
 
 	// AndyStutz
-	if (Q_stricmp (cmd, "setvar") == 0) {
+	if (Q_stricmp (cmd, "varset") == 0) {
 		//if(trap_Argc() < 2) 
 			//return;
 		//string sparams = ConcatArgs(1);
-		Cmd_Setvar_f(ent);
+		Cmd_VarSet_f(ent);
 		return;
 	}
 

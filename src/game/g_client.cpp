@@ -1082,6 +1082,12 @@ qboolean _SetSoldierSpawnWeapons(gclient_t *client)
     // Add the primary weapon
 	AddWeaponToPlayer(client, w, GetAmmoTableData(w)->defaultStartingAmmo, GetAmmoTableData(w)->defaultStartingClip, qtrue);
 
+	// snax - Add Engitools if enabled
+	if( cvars::bg_omniEngi.ivalue ) {
+		AddWeaponToPlayer( client, WP_DYNAMITE, 0, 1, qfalse );
+		AddWeaponToPlayer( client, WP_PLIERS, 0, 1, qfalse );
+	}
+
     // Handle secondaries
 	if( w == WP_MOBILE_MG42 ) {
 		AddWeaponToPlayer(client, WP_MOBILE_MG42_SET, GetAmmoTableData(WP_MOBILE_MG42_SET)->defaultStartingAmmo, GetAmmoTableData(WP_MOBILE_MG42_SET)->defaultStartingClip, qfalse);

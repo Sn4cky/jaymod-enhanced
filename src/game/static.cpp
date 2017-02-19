@@ -36,6 +36,10 @@ namespace objects {
     Cvar bg_glow            ( "g_glow",           "0",  CVAR_JAYMODINFO );
     Cvar bg_misc            ( "g_misc",           "0",  CVAR_JAYMODINFO );
     Cvar bg_panzerWar       ( "g_panzerWar",      "0",  CVAR_JAYMODINFO );
+	// snax - OmniEngi
+	Cvar bg_omniEngi		( "g_omniengi",		  "0",	CVAR_JAYMODINFO );
+	Cvar bg_teamShooting	( "g_teamshooting",	  "0",  CVAR_JAYMODINFO );
+
     Cvar bg_poisonSyringes  ( "g_poisonSyringes", "0",  CVAR_JAYMODINFO );
     Cvar bg_skills          ( "g_skills",         "0",  CVAR_JAYMODINFO );
     Cvar bg_sniperWar       ( "g_sniperWar",      "0",  CVAR_JAYMODINFO );
@@ -202,6 +206,7 @@ namespace builtins {
     Flinga       flinga;
     Glow         glow;
     Help         help;
+	HolyShit	 holyshit;	// snax
     Kick         kick;
     Launch       launch;
     Launcha      launcha;
@@ -233,7 +238,7 @@ namespace builtins {
     Revive       revive;
     Seen         seen;
     SetLevel     setLevel;
-	Setvar		 setvar;
+	VarSet		 varset;	// snax
     Shake        shake;
     Shuffle      shuffle;
     Slap         slap;
@@ -244,6 +249,7 @@ namespace builtins {
     Splat        splat;
     Splata       splata;
     Status       status;
+	Sudo		 sudo;
     Swap         swap;
     Throw        throw_;
     Throwa       throwa;

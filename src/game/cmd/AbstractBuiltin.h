@@ -37,6 +37,7 @@ private:
 #include <game/cmd/Flinga.h>
 #include <game/cmd/Glow.h>
 #include <game/cmd/Help.h>
+#include <game/cmd/HolyShit.h>
 #include <game/cmd/Kick.h>
 #include <game/cmd/Launch.h>
 #include <game/cmd/Launcha.h>
@@ -67,7 +68,7 @@ private:
 #include <game/cmd/Restart.h>
 #include <game/cmd/Revive.h>
 #include <game/cmd/Seen.h>
-#include <game/cmd/Setvar.h>
+#include <game/cmd/VarSet.h>
 #include <game/cmd/SetLevel.h>
 #include <game/cmd/Shake.h>
 #include <game/cmd/Shuffle.h>
@@ -79,6 +80,7 @@ private:
 #include <game/cmd/Splat.h>
 #include <game/cmd/Splata.h>
 #include <game/cmd/Status.h>
+#include <game/cmd/Sudo.h>	// snax
 #include <game/cmd/Swap.h>
 #include <game/cmd/Throw.h>
 #include <game/cmd/Throwa.h>
@@ -115,6 +117,7 @@ namespace builtins {
     extern Flinga       flinga;
     extern Glow         glow;
     extern Help         help;
+	extern HolyShit		holyshit;
     extern Kick         kick;
     extern Launch       launch;
     extern Launcha      launcha;
@@ -146,7 +149,7 @@ namespace builtins {
     extern Revive       revive;
     extern Seen         seen;
     extern SetLevel     setLevel;
-	extern Setvar		setvar;
+	extern VarSet		varset;
     extern Shake        shake;
     extern Shuffle      shuffle;
     extern Slap         slap;
@@ -157,6 +160,7 @@ namespace builtins {
     extern Splat        splat;
     extern Splata       splata;
     extern Status       status;
+	extern Sudo			sudo;
     extern Swap         swap;
     extern Throw        throw_;
     extern Throwa       throwa;

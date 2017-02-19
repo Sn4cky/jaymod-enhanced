@@ -824,6 +824,9 @@ typedef struct {
 	// AndyStutz
 	int fastpanzerkillspreekills;
 
+	// snax
+	int			lastkilledby_holy;	// last client that killed this client, does not reset with respawn
+
 	// jaybird
 	int killspreekills;
 	int losespreekills;
@@ -1843,6 +1846,8 @@ extern	vmCvar_t	g_restarted;
 extern	vmCvar_t	g_fraglimit;
 extern	vmCvar_t	g_timelimit;
 extern	vmCvar_t	g_friendlyFire;
+extern	vmCvar_t	g_teamshooting;	// snax
+extern	vmCvar_t	g_omniengi;	// snax
 extern	vmCvar_t	g_password;
 extern	vmCvar_t	sv_privatepassword;
 extern	vmCvar_t	g_gravity;
@@ -2673,6 +2678,8 @@ qboolean G_ConstructionIsPartlyBuilt( gentity_t* ent );
 int G_CountTeamMedics( team_t team, qboolean alivecheck );
 qboolean G_TankIsOccupied( gentity_t* ent );
 qboolean G_TankIsMountable( gentity_t* ent, gentity_t* other );
+
+void G_Say( gentity_t *ent, gentity_t *target, int mode, const char *chatText );
 
 qboolean G_ConstructionIsDestroyable( gentity_t* ent );
 qboolean G_ConstructionBegun( gentity_t* ent );

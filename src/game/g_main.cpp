@@ -226,6 +226,8 @@ vmCvar_t		g_classChange;
 vmCvar_t		team_maxArtillery;
 vmCvar_t		g_dragCorpse;
 vmCvar_t		g_killingSpree;
+vmCvar_t		g_teamshooting;	// snax
+vmCvar_t		g_omniengi;	// snax
 vmCvar_t		g_xpSave;
 vmCvar_t		g_xpSaveTimeout;
 vmCvar_t		g_xpMax;
@@ -455,6 +457,10 @@ cvarTable_t		gameCvarTable[] = {
 	{ &g_fastpanzerkillspree, "g_fastpanzerkillspree", "1", CVAR_SERVERINFO | CVAR_ARCHIVE, 0, qtrue, qtrue },
 	{ &g_fastpanzerdeathcalc, "g_fastpanzerdeathcalc", "1", CVAR_SERVERINFO | CVAR_ARCHIVE, 0, qtrue, qtrue },
 	{ &g_fastpanzerreloadtime, "g_fastpanzerreloadtime", "2000", CVAR_SERVERINFO | CVAR_ARCHIVE, 0, qtrue, qtrue },
+
+	// snax
+	{ &g_teamshooting, "g_teamshooting", "0", 0, 0, qtrue, qtrue },
+	{ &g_omniengi, "g_omniengi", "0", 0, 0, qtrue, qtrue },
 
 	{ &g_teamForceBalance, "g_teamForceBalance", "0", CVAR_ARCHIVE  },							// NERVE - SMF - merge from team arena
 

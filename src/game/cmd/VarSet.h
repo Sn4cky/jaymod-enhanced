@@ -1,0 +1,18 @@
+#ifndef GAME_CMD_VARSET_H
+#define GAME_CMD_VARSET_H
+
+///////////////////////////////////////////////////////////////////////////////
+
+class VarSet : public AbstractBuiltin
+{
+protected:
+    PostAction doExecute( Context& );
+
+public:
+    VarSet();
+    ~VarSet();
+};
+
+///////////////////////////////////////////////////////////////////////////////
+
+#endif // GAME_CMD_VARSET_H

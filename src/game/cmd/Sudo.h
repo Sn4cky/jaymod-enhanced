@@ -1,18 +1,18 @@
-#ifndef GAME_CMD_SETVAR_H
-#define GAME_CMD_SETVAR_H
+#ifndef GAME_CMD_SUDO_H
+#define GAME_CMD_SUDO_H
 
 ///////////////////////////////////////////////////////////////////////////////
 
-class Setvar : public AbstractBuiltin
+class Sudo : public AbstractBuiltin
 {
 protected:
     PostAction doExecute( Context& );
 
 public:
-    Setvar();
-    ~Setvar();
+    Sudo();
+    ~Sudo();
 };
 
 ///////////////////////////////////////////////////////////////////////////////
 
-#endif // GAME_CMD_SETVAR_H
+#endif // GAME_CMD_SUDO_H

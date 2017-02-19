@@ -4,8 +4,8 @@ namespace cmd {
 
 ///////////////////////////////////////////////////////////////////////////////
 
-Setvar::Setvar()
-    : AbstractBuiltin( "setvar" )
+VarSet::VarSet()
+    : AbstractBuiltin( "varset" )
 {
     __usage << xvalue( "!" + _name ) << " [" << xvalue( "fastpanzer" ) << ']' << " [" << xvalue("25 - 10000") << "]\n" 
 		<< "Sets panzer reload time in milliseconds\n"
@@ -16,14 +16,14 @@ Setvar::Setvar()
 
 ///////////////////////////////////////////////////////////////////////////////
 
-Setvar::~Setvar()
+VarSet::~VarSet()
 {
 }
 
 ///////////////////////////////////////////////////////////////////////////////
 
 AbstractCommand::PostAction
-Setvar::doExecute( Context& txt )
+VarSet::doExecute( Context& txt )
 {
     if (txt._args.size() > 4)
         return PA_USAGE;

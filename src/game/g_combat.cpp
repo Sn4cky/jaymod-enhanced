@@ -567,6 +567,7 @@ void player_die( gentity_t *self, gentity_t *inflictor, gentity_t *attacker, int
     if (attacker && attacker->client) {
 		Q_strncpyz(attacker->client->pers.lastkill, self->client->pers.netname, sizeof(attacker->client->pers.lastkill));
         self->client->lastkilledby_client = attacker->s.number;
+		self->client->pers.lastkilledby_holy = attacker->s.number;
     }
 
 	//self->client->ps.persistant[PERS_KILLED]++;
@@ -1062,6 +1063,10 @@ void G_Damage( gentity_t *targ, gentity_t *inflictor, gentity_t *attacker, const
 		knockback = int( knockback * 0.5f );
 
 	if( targ->client && g_friendlyFire.integer && OnSameTeam(targ, attacker) ) {
+		knockback = 0;
+	}
+
+	if( !g_teamshooting.integer && OnSameTeam(targ, attacker) ) {
 		knockback = 0;
 	}
 	
